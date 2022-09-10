@@ -1,0 +1,185 @@
+body{
+  background-image: url("sky.jpg");
+  background-color: #cccccc;
+  font-family: 'Jua', sans-serif;
+}
+
+.Window{
+  margin: 30px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Guide{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+li{
+  display: inline;
+  align-self: center;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.menu{
+  margin:0;
+}
+
+.name{
+  font-size: 40px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.Yard{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.sentence{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  margin-top:60px;
+  margin-bottom:60px;
+}
+
+.enter{
+  margin-left: 60px;
+  width: 60%;
+}
+
+.footer{
+  font-family: "Times New Roman";
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+.contact{
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/*About me*/
+
+.introduction{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 100px 100px;
+}
+
+.me{
+  width: 400px;
+  margin-right:60px;
+}
+
+.words>h2{
+  margin-top:0;
+}
+
+.words>p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:20px;
+  font-weight:900;
+}
+
+.favorites{
+  font-size:35px;
+  margin: 30px 100px;
+}
+
+.characteristics{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 20px 150px;
+  margin-top: 20px;
+}
+
+.things{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.movie{
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 2px solid:black;
+  border: 100px;
+}
+
+.listup{
+  display: block;
+}
+
+.book{
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 2px solid:black;
+  border: 100px;
+}
+
+h4{
+  font-size: 30px;
+  margin-left:20px;
+}
+
+.food{
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 2px solid:black;
+  border: 100px;
+}
+
+
+.experiences{
+  font-size:35px;
+  margin: 30px 100px;
+}
+
+.expe{
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  border: 2px solid:black;
+  border: 100px;
+}
+
+/*gallery*/
+
+div.gallery {
+  margin: 5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.exp{
+}
