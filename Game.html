@@ -1,0 +1,115 @@
+.<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>MUKBO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="Window">
+
+      <nav class="Guide">
+        <a href="index.html"><h3 class="name">MUKBO</h3></a>
+        <ul class="menu">
+          <li><a href="Aboutme.html" class="Aboutme">ABOUT ME</a></li>
+          <li><a href="Gallery.html" class="Pictures">GALLERY</a></li>
+          <li><a href="Game.html" class="Games">GAME</a></li>
+        </ul>
+      </nav>
+
+      <div class = "page-About">
+        <h2>신이 먹보를 만들 때</h2>
+      </div>
+
+      <img class="game_pic" src="makeme.PNG" width="600" height="400">
+      <div class="buttons">
+      <input type="button" id="자아실현" value="자아실현욕" />
+      <input type="button" id="존경" value="존경욕" />
+      <input type="button" id="애정" value="애정욕" />
+      <input type="button" id="안전" value="안전욕" />
+      <input type="button" id="생리적" value="생리욕" />
+      </div>
+
+      <div class="status">
+      현재 배합 : <span id="current1"></span> | <span id="current2"></span> | <span id="current3"></span> | <span id="current4"></span>
+      | <span id="current5"></span>
+      </div>
+      <div class="result">
+        <input type="button" id="결과" value="먹보 완성?" />
+      </div>
+    </div>
+
+    <script>
+      var self = 0;
+      var resp = 0;
+      var love = 0;
+      var safe = 0;
+      var life = 0;
+      var sum = self + resp + love + safe + life;
+      //현재 잔액 확인해주는 것 (현재 coin값이 html에 찍히게 함)
+      document.getElementById("current1").innerHTML = self + " 자아실현";
+      document.getElementById("current2").innerHTML = resp + " 존경";
+      document.getElementById("current3").innerHTML = love + " 애정";
+      document.getElementById("current4").innerHTML = safe + " 안전";
+      document.getElementById("current5").innerHTML = life + " 생리적";
+
+      function click_btn1() {
+        self += 10;
+        document.getElementById("current1").innerHTML = self + " 자아실현";
+      }
+
+      function click_btn2() {
+        resp += 10;
+        document.getElementById("current2").innerHTML = resp + " 존경";
+      }
+
+      function click_btn3() {
+        love += 10;
+        document.getElementById("current3").innerHTML = love + " 애정";
+      }
+
+      function click_btn4() {
+        safe +=10;
+        document.getElementById("current4").innerHTML = safe + " 안전";
+      }
+
+      function click_btn5() {
+        life += 10;
+        document.getElementById("current5").innerHTML = life + " 생리적";
+      }
+
+      function click_btn6(){
+        if (life >= 50){
+          alert("먹보 완성!");
+        }
+        else {alert("미지의 인물")};
+      }
+
+      const 자아실현 = document.getElementById("자아실현");
+      자아실현.addEventListener("click", click_btn1);
+
+      const 존경 = document.getElementById("존경");
+      존경.addEventListener("click", click_btn2);
+
+      const 애정 = document.getElementById("애정");
+      애정.addEventListener("click", click_btn3);
+
+      const 안전 = document.getElementById("안전");
+      안전.addEventListener("click", click_btn4);
+
+      const 생리적 = document.getElementById("생리적");
+      생리적.addEventListener("click", click_btn5);
+
+      const 결과 = document.getElementById("결과");
+      결과.addEventListener("click", click_btn6);
+
+    </script>
+  </body>
+
+
+</html>
